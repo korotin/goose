@@ -47,6 +47,8 @@ func main() {
 		return
 	}
 
+	log.Printf("test log message")
+
 	if *versionFlag {
 		buildInfo, ok := debug.ReadBuildInfo()
 		if version == "" && ok && buildInfo != nil && buildInfo.Main.Version != "" {
